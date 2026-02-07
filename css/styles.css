@@ -691,7 +691,6 @@ input {
 
 .contacts-checkbox {
   margin-top: 16px;
-  position: relative;
 }
 
 .contacts-check-label {
@@ -700,8 +699,15 @@ input {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: block;
-  margin-left: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.contacts-check-link {
+  line-height: 1.33;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
 }
 
 .contacts-check-label:focus,
@@ -718,12 +724,9 @@ input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   width: 16px;
   height: 16px;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 8px;
 }
 
 .contacts-check:checked + .contacts-check-label .contacts-check-custom {
@@ -743,13 +746,6 @@ input {
 
 .contacts-check:checked + .contacts-check-label .contacts-check-icon {
   fill: #f4f4fd;
-}
-
-.contacts-check-link {
-  line-height: 1.33;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-  color: #4d5ae5;
 }
 
 .contacts-button {
