@@ -230,19 +230,6 @@ input {
   max-width: 1440px;
 }
 
-.main-title-box {
-  position: relative;
-}
-
-.main-arrow {
-  position: absolute;
-  stroke-width: 2px;
-  stroke: #fff;
-  fill: #fff;
-  bottom: 0;
-  left: 8.81%;
-}
-
 .main-title {
   font-weight: 700;
   font-size: 56px;
@@ -694,16 +681,19 @@ input {
 }
 
 .contacts-check-label {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-label-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: flex;
-  align-items: center;
 }
 
-.contacts-check-link {
+.contacts-label-link {
   line-height: 1.33;
   text-decoration: underline;
   text-decoration-skip-ink: none;
