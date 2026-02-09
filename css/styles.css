@@ -538,7 +538,6 @@ input {
 .contacts-modal {
   width: 408px;
   min-height: 584px;
-  height: 200px;
   overflow: auto;
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
